@@ -70,7 +70,10 @@ dependencies {
 
  ```
 
-## Edit `testapp/android/app/src/main/java/com/example/testapp/MainActivity.java` 
+## Start services on app startup
+
+
+edit `testapp/android/app/src/main/java/com/example/testapp/MainActivity.java` 
 
  ```
 package com.example.testapp; 
@@ -90,9 +93,12 @@ public class MainActivity extends FlutterActivity {
 ```
  
 
-## Edit testapp/android/app/src/main/AndroidManifest.xml add  to <manifest> 
+##  Add Foreground Service Permission
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> 
+Edit `testapp/android/app/src/main/AndroidManifest.xml`
+write to `<manifest>`
+
+   ` <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> `
 
  
 
