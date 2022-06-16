@@ -111,4 +111,19 @@ write to `<manifest>`
   
 At this point, you should see 'hello world' printed if you `adb locat` , while the flutter demo app running.  Communicating between the two is an excercse to the user,  you can use raw sockets, ZeroMQ, Nanomsg-NG libraries to name a few.
 
+Some useful projects:
+ - Access Android Java API from Python: [pyjnius](https://pyjnius.readthedocs.io/en/stable/)
+ - Cross platform API for common tasks: [plyer](https://github.com/kivy/plyer)
+
+## Proguard rules for pyjnius
+
+```
+-keep public class org.kivy.android.** {
+    *;
+}
+-keep public class org.jnius.** {
+    *;
+}
+```
+
  
