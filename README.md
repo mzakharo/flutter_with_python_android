@@ -40,7 +40,7 @@ android.release_artifact = aar
 # sticky : so that OS restarts us on exit/crash 
 services = Srv:srv.py:foreground:sticky  
 
-#pick an ABI -> only one is supported  
+#pick an ABI -> only one is supported (for now)
 android.archs = arm64-v8a 
 ```
 
