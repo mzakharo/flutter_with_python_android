@@ -1,6 +1,6 @@
 # Flutter with Python on Android
 
- Instructions on how to generate one APK, containing Flutter UI as a frontend, and Python Service as a backend.
+ Instructions on how to generate one APK, containing Flutter UI as a frontend, and a Python Service as a backend.
  
  Require https://github.com/kivy/python-for-android/pull/2612  and https://github.com/kivy/buildozer/pull/1444
 
