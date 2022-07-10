@@ -48,7 +48,7 @@ android.archs = arm64-v8a, x86
 
 `buildozer  android release`
 
-##  Setup flutter project
+##  Setup a flutter project
 ```
 cd ..\
 flutter create -i objc -a java testapp
