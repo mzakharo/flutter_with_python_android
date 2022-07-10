@@ -41,7 +41,7 @@ android.release_artifact = aar
 services = Srv:srv.py:foreground:sticky  
 
 #pick ABI(s)  
-android.archs = arm64-v8a , x86
+android.archs = arm64-v8a, x86
 ```
 
 ## Compile the aar 
