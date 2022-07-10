@@ -40,8 +40,8 @@ android.release_artifact = aar
 # sticky : so that OS restarts us on exit/crash 
 services = Srv:srv.py:foreground:sticky  
 
-#pick an ABI -> only one is supported (for now)
-android.archs = arm64-v8a 
+#pick ABI(s)  
+android.archs = arm64-v8a , x86
 ```
 
 ## Compile the aar 
@@ -66,11 +66,8 @@ flutter create -i objc -a java testapp
 # add aar as a dependency 
 
 dependencies { 
-    implementation files('../../../libapp/bin/myapp-0.1-arm64-v8a-release.aar') 
+    implementation files('../../../libapp/bin/myapp-0.1-arm64-v8a_x86-release.aar') 
 } 
-
-#filter out ABIs that won't work – add to defaultConfig {} 
-        ndk { abiFilters "arm64-v8a" } 
 
  ```
 
