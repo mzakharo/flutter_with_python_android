@@ -36,7 +36,7 @@ p4a.bootstrap = service_library
 # ask p4a to output aar instead of apk 
 android.release_artifact = aar
 
-# foreground so that OS does not kill us 
+# foreground : so that OS does not kill us 
 # sticky : so that OS restarts us on exit/crash 
 services = Srv:srv.py:foreground:sticky  
 
