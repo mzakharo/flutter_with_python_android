@@ -36,7 +36,7 @@ p4a.bootstrap = service_library
 # ask p4a to output aar instead of apk 
 android.release_artifact = aar
 
-#specify your dependencies
+#specify your dependencies (list here more packages as your script's dependencies)
 requirements = python3
 
 # foreground : so that OS does not kill us 
