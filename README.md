@@ -39,8 +39,8 @@ android.release_artifact = aar
 #specify your dependencies (list here more packages as your script's dependencies)
 requirements = python3
 
-# foreground : so that OS does not kill us 
-# sticky : so that OS restarts us on exit/crash 
+# foreground : so that OS does not kill us (optional)
+# sticky : so that OS restarts us on exit/crash  (optional)
 services = Srv:srv.py:foreground:sticky  
 
 #pick ABI(s)  
