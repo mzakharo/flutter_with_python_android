@@ -29,20 +29,20 @@ Edit `buildozer.spec`
 ```
 package.domain = org.domain
 
-#select service bootstrap 
+# select service bootstrap 
 p4a.bootstrap = service_library 
 
 # ask p4a to output aar instead of apk 
 android.release_artifact = aar
 
-#specify your runtime python package dependencies here (comma separated)
+# specify your runtime python package dependencies here (comma separated)
 requirements = python3
 
 # foreground : so that OS does not kill us (optional)
 # sticky : so that OS restarts us on exit/crash  (optional)
 services = Srv:srv.py:foreground:sticky  
 
-#pick ABI(s) - NOTE: listing more than needed here grows the final .apk size
+# pick ABI(s) - NOTE: listing more than needed here grows the final .apk size
 android.archs = arm64-v8a, x86
 ```
 
