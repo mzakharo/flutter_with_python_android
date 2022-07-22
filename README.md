@@ -29,6 +29,9 @@ Edit `buildozer.spec`
 ```
 package.domain = org.domain
 
+# kivy introduces conflicting dependencies and is not needed
+requirements = python3
+
 # select service bootstrap 
 p4a.bootstrap = service_library 
 
