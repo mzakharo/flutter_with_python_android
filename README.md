@@ -4,7 +4,7 @@
  
  Using the [p4a](https://python-for-android.readthedocs.io/en/latest/) project for bundling python scripts and cross-compiling python libraries with native components (like numpy/scipy/pandas/tflite-runtime). 
  
-NOTE: This tutorial requres at least [p4a version v2022.07.20](https://github.com/kivy/python-for-android/releases/tag/v2022.07.20)  and [buildozer version 1.4.0](https://github.com/kivy/buildozer/releases/tag/1.4.0)
+NOTE: This tutorial requres at minimum [p4a version v2022.07.20](https://github.com/kivy/python-for-android/releases/tag/v2022.07.20)  and [buildozer version 1.4.0](https://github.com/kivy/buildozer/releases/tag/1.4.0)
 ## Install buildozer:
  https://buildozer.readthedocs.io/en/latest/installation.html
 
