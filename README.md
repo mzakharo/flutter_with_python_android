@@ -4,8 +4,7 @@
  
  Using the [p4a](https://python-for-android.readthedocs.io/en/latest/) project for bundling python scripts and cross-compiling python libraries with native components (like numpy/scipy/pandas/tflite-runtime). 
  
-NOTE: This tutorial requres https://github.com/kivy/python-for-android/pull/2612  and https://github.com/kivy/buildozer/pull/1444
-
+NOTE: This tutorial requres [p4a version v2022.07.20](https://github.com/kivy/python-for-android/releases/tag/v2022.07.20)  and [buildozer version 1.4.0](https://github.com/kivy/buildozer/releases/tag/1.4.0)
 ## Install buildozer:
  https://buildozer.readthedocs.io/en/latest/installation.html
 
@@ -77,6 +76,11 @@ dependencies {
 ## Start services on app startup
 
 
+ Here we assume you wish to start the service when your app starts and you are using a sticky foreground service.
+ 
+
+
+
 edit `testapp/android/app/src/main/java/com/example/testapp/MainActivity.java` 
 
  ```
@@ -95,9 +99,11 @@ public class MainActivity extends FlutterActivity {
         } 
 } 
 ```
- 
+Optionally, you can add a hook when the app exits to stop the python service with `ServiceSrv.stop()` API
 
 ##  Add Foreground Service Permission
+
+Optional if you selected `foreground` when specifying the service in buildozer.
 
 Edit `testapp/android/app/src/main/AndroidManifest.xml`
 write to `<manifest>`
