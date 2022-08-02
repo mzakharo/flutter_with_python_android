@@ -40,7 +40,7 @@ requirements = python3
 
 # foreground : so that OS does not kill us (optional)
 # sticky : so that OS restarts us on exit/crash  (optional)
-services = Srv:srv.py:foreground:sticky  
+services = Srv:srv.py,foreground:sticky  
 
 # pick ABI(s) - NOTE: listing more than needed here grows the final .apk size
 android.archs = arm64-v8a, x86
