@@ -40,6 +40,7 @@ requirements = python3
 
 # foreground : so that OS does not kill us (optional)
 # sticky : so that OS restarts us on exit/crash  (optional)
+# NOTE: sticky services are persistent and will not close when the main app closes
 services = Srv:srv.py:foreground:sticky  
 
 # pick ABI(s) - NOTE: listing more than needed here grows the final .apk size
@@ -117,7 +118,11 @@ write to `<manifest>`
 
 `flutter run`
   
-At this point, you should see 'hello world' printed if you `adb logcat` , while the flutter demo app running.  Communicating between the two is an excercse to the user,  you can use raw sockets, ZeroMQ, Nanomsg-NG libraries to name a few.
+At this point, you should see 'hello world' printed if you `adb logcat` , while the flutter demo is running. Options for communicating between python and flutter include: 
+ - flask server 
+ - zeromq
+ - nanomsg-ng
+ - raw UDP/TCP sockets
 
 Some useful projects:
  - Access Android Java API from Python: [pyjnius](https://pyjnius.readthedocs.io/en/stable/)
