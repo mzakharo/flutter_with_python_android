@@ -112,7 +112,7 @@ public class MainActivity extends FlutterActivity {
     }
 } 
 ```
-Optionally, you can add a hook when the app exits to stop the python service with `ServiceSrv.stop(this)` API
+Lastly, there is `ServiceSrv.stop(this)` API to stop the service manually
 
 ##  Add Foreground Service Permission
 
