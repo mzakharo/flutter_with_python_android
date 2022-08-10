@@ -12,4 +12,11 @@ public class MainActivity extends FlutterActivity {
         ServiceSrv.prepare(this); 
         ServiceSrv.start(this, ""); 
     } 
+
+    //needed if service is not sticky
+    @Override
+    protected void onResume () {
+        ServiceSrv.start(this, "");
+        super.onResume();
+    }
 }
