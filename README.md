@@ -8,7 +8,7 @@ NOTE: This tutorial requres at minimum [p4a version v2022.07.20](https://github.
 
 ## Example project
 
-[Build and Run Tutorial](https://github.com/mzakharo/flutter_with_python_android/blob/main/example/README.md)
+[Flutter + Python example](https://github.com/mzakharo/flutter_with_python_android/tree/main/example)
 
 ## Install buildozer:
  https://buildozer.readthedocs.io/en/latest/installation.html
