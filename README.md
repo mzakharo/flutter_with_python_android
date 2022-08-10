@@ -102,7 +102,14 @@ public class MainActivity extends FlutterActivity {
         super.onCreate(savedInstanceState); 
         ServiceSrv.prepare(this); 
         ServiceSrv.start(this, ""); 
-        } 
+        }
+    
+    //needed if service is not foreground/sticky
+    @Override
+    protected void onResume () {
+        ServiceSrv.start(this, "");
+        super.onResume();
+    }
 } 
 ```
 Optionally, you can add a hook when the app exits to stop the python service with `ServiceSrv.stop(this)` API
