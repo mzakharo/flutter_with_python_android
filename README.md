@@ -112,7 +112,8 @@ public class MainActivity extends FlutterActivity {
     }
 } 
 ```
-Lastly, there is `ServiceSrv.stop(this)` API to stop the service manually
+Lastly, there is `ServiceSrv.stop(this)` API to stop the service manually. 
+If `sticky` is not specified in `buildozer.spec`, service is automatically stopped when the app exits.
 
 ##  Add Foreground Service Permission
 
