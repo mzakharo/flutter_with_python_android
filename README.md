@@ -2,9 +2,14 @@
 
  Instructions on how to generate one APK, containing Flutter UI as a frontend, and a Python Service as a backend.
  
- Using the [p4a](https://python-for-android.readthedocs.io/en/latest/) project for bundling python scripts and cross-compiling python libraries with native components (like numpy/scipy/pandas/tflite-runtime). 
+ Using the [p4a](https://python-for-android.readthedocs.io/en/latest/) project for bundling python scripts and cross-compiling python libraries with native components (numpy/scipy/pandas/tflite-runtime, etc). 
  
 NOTE: This tutorial requres at minimum [p4a version v2022.07.20](https://github.com/kivy/python-for-android/releases/tag/v2022.07.20)  and [buildozer version 1.4.0](https://github.com/kivy/buildozer/releases/tag/1.4.0)
+
+## Example project
+
+[Flutter + Python example](https://github.com/mzakharo/flutter_with_python_android/tree/main/example)
+
 ## Install buildozer:
  https://buildozer.readthedocs.io/en/latest/installation.html
 
