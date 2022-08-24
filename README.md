@@ -15,14 +15,14 @@ NOTE: This tutorial requres at minimum [p4a version v2022.07.20](https://github.
 
 ## Generate empty buildozer config
 
-```
+```bash
 cd libapp
 buildozer init
 ```
 
 Edit a sample python file called srv.py
 
-```
+```python
 import time
 while True:
     time.sleep(1)
@@ -57,7 +57,7 @@ android.archs = arm64-v8a, x86
 `buildozer  android release`
 
 ##  Setup a flutter project
-```
+```bash
 cd ..\
 flutter create -i objc -a java testapp
 ```
@@ -89,7 +89,7 @@ dependencies {
 
 edit `testapp/android/app/src/main/java/com/example/testapp/MainActivity.java` 
 
- ```
+ ```java
 package com.example.testapp; 
 import io.flutter.embedding.android.FlutterActivity; 
 import android.os.Bundle; 
